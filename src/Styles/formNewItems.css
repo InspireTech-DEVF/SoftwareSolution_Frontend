@@ -1,0 +1,125 @@
+/*Estilos para el formulario de nuevo producto*/
+  .body {  
+  font-family: Arial, sans-serif;
+  background-color: #d8a6a6;
+  margin: 0;
+  padding: 0;
+}
+
+.container_principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-left, .form-right {
+  width: 45%;
+}
+
+.form-left {
+  margin-right: 10%;
+}
+
+.form-group {
+  margin-bottom: 2px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.image-preview {
+  text-align: center;
+}
+
+.image-preview Image  {
+  max-width: 100%;
+  height: auto;
+}
+
+
+  
+  /*Estilos para el formulario de nuevo producto*/
+.container_principal {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 90vh;
+}
+
+.left {
+    background-color: #c8c8c5;
+    width: 30%;
+    height: 90vh;
+    padding: 10px;
+}
+
+label {
+    margin-bottom: 2px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+input[type="url"],
+input[type="text"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.right {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 80vh;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    overflow:hidden;
+}
+
+.image-preview{
+margin-top: 50px;
+width: 100%;
+background-size: cover;
+}
+
+
