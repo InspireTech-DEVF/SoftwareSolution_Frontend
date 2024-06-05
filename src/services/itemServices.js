@@ -18,11 +18,11 @@ const getOneItemService = (idItem) => axios.get(`${BASE_URL}/items/${idItem}`)
 // 4.2 Creamos una constante para hacer el llamado a la API por medio de Axios para llamar dar de alta un producto
 
 const createItemService = (data, jwtToken) =>
-  axios.post(`${BASE_URL}/items`, data, {
-    headers: {
-      Authorization: `Bearer ${jwtToken}`
-    }
-  })
+   axios.post('http://localhost:8001/api/v1/articulo',data , {
+        headers: {
+          Authorization: `Bearer ${jwtToken}`
+        }
+      })
 
 export {
   getAllItemsService,

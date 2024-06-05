@@ -28,11 +28,11 @@ function UserNew () {
         phone,
         role
       });
-      console.log('User created:', response.data);
+      console.log('User created:', response);
       // Puedes hacer algo después de crear el usuario, como redireccionar o mostrar un mensaje de éxito
       navigate('/login')
     } catch (err) {
-      console.error('Error creating user:', err);
+      console.error('Error creating user:', err.message);
       // Manejar errores, por ejemplo, mostrar un mensaje de error al usuario
     }
   };

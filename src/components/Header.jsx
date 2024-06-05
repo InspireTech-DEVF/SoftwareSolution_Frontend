@@ -6,7 +6,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import Promo from '../img/disney.webp'
 
 const Header = () => {
-  const { isAuth, logout } = useAuthContext()
+  const { isAuth, logout, userPayload} = useAuthContext()
+  const esAdministrador = () => {
+    return userPayload && userPayload.role === 'ADMIN';
+  };
+
+
   return (
 
     <div className='header'>
@@ -55,7 +60,7 @@ const Header = () => {
                   {/* Esta parte del codigo muestra en el menu estas opcciones cuando SI estas autenticado */}
                   <NavLink className='menu' to='/mis_datos'>Mis datos</NavLink>
                   <NavLink className='menu' to='/mis_compras'>Mis compras</NavLink>
-                  <NavLink className='menu' to='/item_new'>Nuevo Producto</NavLink>
+                 
                   <NavLink className='menu' to='/' onClick={logout}>Cerrar sesión</NavLink>
 
                 </>
@@ -69,6 +74,10 @@ const Header = () => {
                 </>
 
                 )}
+                {/* Si el usuario está autenticado, muestra la opción "Nuevo Producto" */}
+                {esAdministrador() && (
+                     <NavLink className='menu' to='/item_new'>Nuevo Producto</NavLink>
+                ) }
 
           </Nav>
         </div>

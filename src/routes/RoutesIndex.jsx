@@ -11,7 +11,10 @@ import MisDatos from '../page/MisDatos'
 import ItemNew from '../page/ItemNew'
 
 const RoutesIndex = () => {
-  const { isAuth } = useAuthContext()
+  const { isAuth, userPayload } = useAuthContext()
+  const esAdministrador = () => {
+    return userPayload && userPayload.role === 'ADMIN';
+  };
 
   return (
     <Routes>
@@ -23,7 +26,7 @@ const RoutesIndex = () => {
       <Route path='/items/:idItem' element={<ArticleDetails />} />
       <Route path='/mis_compras' element={isAuth ? <MyShopping /> : <Navigate to='/login' />} />{/* este codigo protege las rutas si no estas autenticado */}
       <Route path='/mis_datos' element={isAuth ? <MisDatos /> : <Navigate to='/login' />} />{/* este codigo protege las rutas si no estas autenticado */}
-      <Route path='/item_new' element={isAuth ? <ItemNew /> : <Navigate to='/login' />} />{/* este codigo protege las rutas si no estas autenticado */}
+      <Route path='/item_new' element={esAdministrador() ?  <ItemNew /> : <Navigate to='/login' />} />{/* este codigo protege las rutas si no estas autenticado */}
     </Routes>
   )
 }
