@@ -1,0 +1,37 @@
+
+.carros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.carro-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: calc(33.333% - 32px);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.carro-item:hover {
+    transform: scale(1.05);
+}
+
+.carro-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.carro-item p {
+    margin: 5px 0;
+}
+
+.carro-item img {
+    width: 100%;
+    border-radius: 8px;
+}

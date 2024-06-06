@@ -1,0 +1,13 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.izquierdo{
+    width: 50%;
+}
+
+.derecho{
+    width: 50%;
+}

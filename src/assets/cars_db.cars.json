@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "6621aec817f449be2696dafc"
+  },
+  "plate": "ABC123",
+  "year": 2020,
+  "model": "Corolla",
+  "brand": "Toyota",
+  "version": "LE",
+  "color": "red",
+  "carType": "sedan",
+  "vin": "1B3BS46C04D530853",
+  "newCar": true,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-04-18T23:37:44.654Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-18T23:37:44.654Z"
+  },
+  "__v": 0
+  
+},
+{
+  "_id": {
+    "$oid": "6621b01a17f449be2696dafe"
+  },
+  "plate": "AED123",
+  "year": 2021,
+  "model": "Aveo",
+  "brand": "Chevrolet",
+  "version": "LT",
+  "color": "blue",
+  "carType": "sedan",
+  "vin": "Q128JD8374ME8S72K",
+  "newCar": true,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-04-18T23:43:22.708Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-18T23:43:22.708Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6621b05017f449be2696db00"
+  },
+  "plate": "OES932",
+  "year": 2022,
+  "model": "Mustang",
+  "brand": "Ford",
+  "version": "Cobra",
+  "color": "red",
+  "carType": "sedan",
+  "vin": "AD938J83EI93ME91L",
+  "newCar": true,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-04-18T23:44:16.683Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-18T23:44:16.683Z"
+  },
+  "__v": 0
+}]
